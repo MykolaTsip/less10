@@ -1,0 +1,9 @@
+
+<button (click)="add()"> add user </button>
+<button (click)="clear()"> clear users</button>
+<div *ngIf="user[0]">
+  {{user | json}}
+</div>
+<h3 *ngIf="err">
+  {{err}}
+</h3>
